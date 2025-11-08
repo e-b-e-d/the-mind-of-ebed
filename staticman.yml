@@ -1,8 +1,16 @@
 comments:
-  name: "Comments"
-  description: "User comments"
-  repository: "e-b-e-d/the-mind-of-ebed"
-  branch: "main"
-  allowed_fields: ["name", "email", "comment"]
+  allowedFields: ["name", "email", "message"]
+  branch: "add-staticman-config"
+  commitMessage: "New comment by {fields.name}"
+  path: "comments/{@timestamp}"
+  filename: "entry"
+  format: "yaml"
   moderation: true
-  required_fields: ["name", "comment"]
+  requiredFields: ["name", "message"]
+  transforms:
+    email: md5
+  generatedFields:
+    date:
+      type: date
+      options:
+        format: "iso8601"
