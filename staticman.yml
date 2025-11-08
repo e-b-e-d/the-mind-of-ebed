@@ -1,23 +1,21 @@
-comments:
-  allowedFields: ["name", "email", "message"]
-  branch: "add-staticman-config"
-  commitMessage: "New comment by {fields.name}"
-  path: "comments/{@timestamp}"
-  filename: "entry"
-  format: "yaml"
-  moderation: true
-  requiredFields: ["name", "message"]
-  transforms:
-    email: md5
-  generatedFields:
-    date:
-      type: date
-      options:
-        format: "iso8601"
+<section id="comments" class="comments-section">
+  <h2>Leave a Comment</h2>
+  <form action="https://staticman3.herokuapp.com/v3/entry/github/e-b-e-d/the-mind-of-ebed/add-staticman-config/comments" method="POST">
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" name="name" id="name" placeholder="Your name" required>
+    </div>
 
-  # ✅ Add these fields below
-  name: "The Mind of Ebed"
-  destination: "comments"
-  moderation: true
-  reCaptcha:
-    enabled: false
+    <div class="form-group">
+      <label for="email">Email (optional, hidden):</label>
+      <input type="email" name="email" id="email" placeholder="Your email">
+    </div>
+
+    <div class="form-group">
+      <label for="message">Comment:</label>
+      <textarea name="message" id="message" rows="5" placeholder="Write your thoughts here..." required></textarea>
+    </div>
+
+    <button type="submit">Submit Comment</button>
+  </form>
+</section>
