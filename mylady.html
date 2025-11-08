@@ -73,12 +73,19 @@ He gave a gentle pat on my head and said- “It’s okay, we’ll see about it l
 
         <section class="comments">
     <h3>Comments</h3>
-    <form action="https://staticman3.herokuapp.com/v3/entry/github/e-b-e-d/the-mind-of-ebed/add-staticman-config/comments" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email (won't be published)">
-        <textarea name="comment" placeholder="Write your thoughts here..." required></textarea>
-        <input type="submit" value="Submit">
-    </form>
+<form action="https://staticmanproxy.netlify.app/v3/entry/github/e-b-e-d/the-mind-of-ebed/add-staticman-config/comments" method="POST">
+  <label for="name">Name:</label><br>
+  <input type="text" name="name" id="name" required><br><br>
+
+  <label for="email">Email (optional):</label><br>
+  <input type="email" name="email" id="email"><br><br>
+
+  <label for="message">Comment:</label><br>
+  <textarea name="message" id="message" rows="4" required></textarea><br><br>
+
+  <button type="submit">Submit Comment</button>
+</form>
+
 </section>
 
     </main>
@@ -89,4 +96,5 @@ He gave a gentle pat on my head and said- “It’s okay, we’ll see about it l
     </footer>
 </body>
 </html>
+
 
