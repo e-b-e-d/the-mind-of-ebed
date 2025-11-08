@@ -1,7 +1,7 @@
 comments:
   name: "Comments"
   description: "User comments"
-  repository: "the-mind-of-ebed/the-mind-of-ebed"
+  repository: "e-b-e-d/the-mind-of-ebed"
   branch: "main"
   allowed_fields: ["name", "email", "comment"]
   moderation: true
