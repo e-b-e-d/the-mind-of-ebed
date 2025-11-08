@@ -14,3 +14,10 @@ comments:
       type: date
       options:
         format: "iso8601"
+
+  # ✅ Add these fields below
+  name: "The Mind of Ebed"
+  destination: "comments"
+  moderation: true
+  reCaptcha:
+    enabled: false
