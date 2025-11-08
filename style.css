@@ -1,0 +1,149 @@
+/* ===== Global Styles ===== */
+body {
+    font-family: 'Lora', serif; /* default body text */
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(
+        135deg,
+        #ffe5d9 0%,    /* soft light peach */
+        #fff9e6 45%,   /* light yellow slightly more */
+        #e6f7ff 55%,   /* light blue reduced */
+        #e6e6ff 100%   /* light purple */
+    );
+    color: #000000;
+    line-height: 1.6;
+}
+
+/* ===== Header ===== */
+header {
+    text-align: center;
+    padding: 40px 20px;
+    border-bottom: 2px solid rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-family: 'Monotype Corsiva', cursive; /* main site title */
+    font-size: 3em;
+    text-shadow: 1px 1px 2px rgba(255,255,255,0.7);
+}
+
+header p {
+    font-style: italic;
+    margin: 5px 0 10px 0;
+    text-shadow: 1px 1px 1px rgba(255,255,255,0.6);
+}
+
+/* ===== Navigation ===== */
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    margin: 0 15px;
+    font-weight: 600;
+    color: #000000;
+}
+
+nav a:hover {
+    color: #555555;
+}
+
+/* ===== Section Headings ===== */
+h2 {
+    font-family: 'Lucida Calligraphy', cursive; /* updated for headings */
+    color: #000000;
+    margin-bottom: 15px;
+    text-shadow: 0.5px 0.5px 1px rgba(255,255,255,0.6); /* optional for visibility */
+}
+
+/* ===== Main Sections ===== */
+main {
+    padding: 30px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Welcome Section */
+#welcome {
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 35px;
+    color: #000000;
+}
+
+/* Stories List */
+.story-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,0.1);
+    background: rgba(255,255,255,0.5);
+}
+
+.story-item a.read-more {
+    color: #000000;
+    font-weight: bold;
+}
+
+.story-item a.read-more:hover {
+    color: #555555;
+}
+
+/* Comments Section */
+.comments {
+    margin-top: 50px;
+}
+
+.comments h3 {
+    margin-bottom: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.comments form textarea {
+    width: 100%;
+    height: 100px;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #000000;
+    resize: vertical;
+    font-family: 'Lora', serif;
+    background: rgba(255,255,255,0.6);
+}
+
+.comments form input[type="submit"] {
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    margin-top: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.comments form input[type="submit"]:hover {
+    background-color: #333333;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px;
+    border-top: 2px solid rgba(0,0,0,0.1);
+    font-family: 'Lora', serif;
+    color: #000;
+}
+
+footer a {
+    color: #000000;
+}
+
+footer a:hover {
+    color: #555555;
+}
